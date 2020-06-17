@@ -68,7 +68,7 @@ export default {
         restart() {
             this.cells = Array(9).fill(null)
             this.stepNumber = 0
-            this.currentPlayer = self.currentPlayer
+            this.currentPlayer = this.currentPlayer === "X" ? "O" : "X"
             this.winner = null
         },
 
